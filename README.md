@@ -1,8 +1,3 @@
-# Data_Science_Happiness_Predict_Health
-## AI Use Declaration
-
-AI and generative AI assisted tools were used by the authors to help improve the language and readability of some of the text. It was used to structure the citations in a correct format.
-
 # Data Science Project Econometrics
 
 ## 1.0 Introduction
@@ -54,14 +49,19 @@ Table 1. Summary of Health Survey
 
 Data is broadly broken down across General Health, Mental Health, GP Use, Smoking &amp; Alcohol, Physical Activity, Nutrition, Sleep, Care and Parental Responsibilities, and Suicide. Response values for questions include binary, continuous and categorical This datDataset consists of different questions concerning perceived health, GP visits, hospital visits, socio-economic questions, alcohol consumption, tobacco consumption, illnesses etc. We distinguished several.
 
-![hist1](DataScProj_files/figure-docx/Histogram 1-1.png)
+![hist1](DataScProj_files/figure-docx/Histogram_1_1.png)
 
-![hist2](DataScProj_files/figure-docx/Histogram 1-2.png)
+![hist2](DataScProj_files/figure-docx/Histogram_1_2.png)
 
 ![boxplot](DataScProj_files/figure-docx/boxplot-1.png)
+
 ### 1.3 Methodology
 
-Our analysis uses regressions based on Ordinary Least Squares (OLS) estimation. This method is commonly used in social sciences fields for regression analysis and exhibits desirable characteristics including a lack of bias, efficiency, and consistency. Different regressions will have a general form of: \\\[Y=\\beta X+e\\], where
+Our analysis uses regressions based on Ordinary Least Squares (OLS) estimation. This method is commonly used in social sciences fields for regression analysis and exhibits desirable characteristics including a lack of bias, efficiency, and consistency. Different regressions will have a general form of:
+
+$`Y = \beta X + e`$
+
+where,
 
 Y is a vector of dependent variable values,
 
@@ -81,7 +81,7 @@ For the primary selection we will conduct simple regression of life rating, whic
 
 Our primary regression model will have a following form:
 
-\\\[lifeRating\_i=\\beta\_0+\\beta\_1\*healthRating\_i+\\epsilon\_i\\] **life rating**: This variable is based on respondents’ subjective evaluation of feeling full of life. It measures how often respondents felt full of life over the 4 weeks preceding the survey . This consists of 6 categories ranging from “All of the time” to “None of the time”.
+$\text{lifeRating}_i = \beta_0 + \beta_1 \times \text{healthRating}_i + \epsilon_i$ **life rating**: This variable is based on respondents’ subjective evaluation of feeling full of life. It measures how often respondents felt full of life over the 4 weeks preceding the survey . This consists of 6 categories ranging from “All of the time” to “None of the time”.
 
 **health rating**: This variable is based on respondents’ subjective rating of their own health. It measures general health on a scale from “Very Good” to “Very Bad”, and includes “Don’t know” and “Refused”.
 
@@ -331,7 +331,7 @@ We tested this regression for multicollinearity, and found that most Variance In
 ## BP = 109.65, df = 20, p-value = 2.278e-14
 ```
 
-![Figure 4. Correlation Plot]()
+![Figure 4. Correlation Plot](DataScProj_files/figure-docx/correlation.jpg)
 
 Figure 4. Correlation Plot
 
@@ -347,7 +347,7 @@ While participation in social clubs was associated with higher life rating from 
 
 The estimated beta for health rating is 0.393, with a standard error of 0.021 when we include this interaction effect in the regression, which otherwise has the same variable as our tertiary regression. This estimate for health rating is nearly identical to the tertiary model’s estimate. This is to be expected as the interaction effect is based on variables already included in the tertiary model. Other coefficients also remain very similar between models.
 
-![Figure 5: Interaction Plot](DataScProj_files/figure-docx/interaction plot-1.png)
+![Figure 5: Interaction Plot](DataScProj_files/figure-docx/interaction_plot_1.png)
 
 #### 2.4.2 Interaction Effect 2: Drinking &amp; Lonely
 
@@ -480,6 +480,11 @@ Krueger, A. B., Kahneman, D., Schkade, D., Schwarz, N. and Stone, A. A. (2009) �
 OECD (n.d.) ‘Life satisfaction.’ [https://www.oecdbetterlifeindex.org/topics/life-satisfaction/#:\~:text=life%20across%20countries.-,Life%20satisfaction%20measures%20how%20people%20evaluate%20their%20life%20as%20a,the%20OECD%20average%20of%206.7.](https://www.oecdbetterlifeindex.org/topics/life-satisfaction/#:~:text=life%20across%20countries.-,Life%20satisfaction%20measures%20how%20people%20evaluate%20their%20life%20as%20a,the%20OECD%20average%20of%206.7.)
 
 United Nations Development Programme (2022) ‘Human development index (HDI).’ [https://hdr.undp.org/data-center/human-development-index#/indicies/HDI](https://hdr.undp.org/data-center/human-development-index#/indicies/HDI).
+
+## Appendix
+![Add Chart](DataScProj_files/figure-docx/Grouped_Histogram_1-3.png)
+
+![Add Chart 2](DataScProj_files/figure-docx/column_chart-1.png)
 
 ## AI Use Declaration
 
